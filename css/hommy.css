@@ -1,0 +1,354 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    color: #000000;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    -webkit-text-size-adjust: none;
+
+}
+
+/*botao pro top*/
+#goto {
+    position: fixed; 
+    bottom: 10%;
+    right: -5%;  
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    mix-blend-mode: lighten;
+    opacity: 1;
+
+}
+
+#goto img {
+    width: 10%; 
+
+}
+
+a, a:hover {
+    text-decoration: none;
+
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    position: absolute;
+
+}
+
+.header img {
+    width: 7%;
+
+}
+
+ul {
+    list-style: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+/* NAVEGACAO e hover */
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar li {
+    padding: 3%;
+    border-radius: 30px;
+
+}
+
+.navbar li:hover {
+    background-color: white;
+    transition-duration: 1.5s;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+#notli:hover {
+    background-color: transparent;
+
+}
+
+.logo img {
+    width: 13%;
+
+}
+
+/* SLOGAN */
+.meio {
+    padding: 8%;
+    min-height: 100vh;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 140%;
+    font-size: 130%;
+    /*IMG*/
+    background-image: url(../css/park.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#sl2 {
+    font-size: 100%;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+/*SOBRE*/
+.sobrenos h1 {
+    font-family: "Lobster", cursive;
+    display: fixed;
+    width: 100%;
+    padding: 4.5%;
+    position: absolute;
+    text-align: center;
+    font-size: 250%;
+    font-weight: lighter;
+
+}
+
+.sobregrupo {
+    display: flex;
+    width: 28%;
+    padding-bottom: 7%;
+    align-items: center;
+    text-align: justify;
+    margin: 0 10%;
+    font-size: 1.6vh;
+
+}
+
+.sobregrupo img, .place, .heart {
+    width: 100%;
+    margin: 0 20%;
+    justify-content: space-between;
+    letter-spacing: 0.2px;
+
+}
+
+.place h3, .heart h3 {
+    margin: -50%;
+    line-height: 150%;
+
+}
+
+.place img {
+    width: 150%;
+    display: block;
+
+}
+
+.heart {
+    margin: 20% 25% 19.7%;
+
+}
+
+.heart img {
+    width: 150%;
+    display: block;
+    margin: 105% -25%;
+
+}
+
+.heart h3 {
+    margin: -45%;
+
+}
+
+.place img {
+    display: block;
+    margin: 120% -25% 120%;
+
+}
+
+#telefone {
+    width: 100%;
+    margin-top: 20%;
+
+}
+
+.titulo {
+    display: flex;
+    line-height: 130%;
+    flex-direction: column;
+
+}
+
+#contatomsg {
+    font-family: "Lobster", cursive;
+    width: 100%;
+    padding: 4.5%;
+    padding-left: 8%;
+    position: absolute;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 250%;
+
+}
+
+.titulo h3 {
+    padding: 8%;
+    padding-bottom: 4%;
+    text-align: left;
+    font-size: 120%;
+    font-style: italic;
+
+}
+
+.c {
+    display: flex;
+    padding-left: 35%;
+
+}
+
+.imgcontato img {
+    width: 70%;
+
+}
+
+.grupocontato button {
+    background-color: gray;
+    border-radius: 20px;
+    border: none;
+    padding: 1.5%;
+    width: 35%;
+    font-size: 120%;
+    cursor: pointer;
+    margin-bottom: 65%;
+    margin-left: 60.5%;
+    outline: none;
+    
+}
+
+.grupocontato button:active {
+    color: gray;
+}
+
+form {
+    font-size: 130%;
+    margin: 4.2%;
+    font-weight: bold;
+    
+}
+
+form input {
+    background-color: lightgrey;
+    border-radius: 20px;
+    border: none;
+
+    width: 100%;
+    padding: 2%;
+    margin: 8px 0;
+
+    font-size: 100%;
+
+}
+
+textarea {
+    background-color: lightgrey;
+    border-radius: 20px;
+    border: none;
+
+    width: 91%;
+    padding: 5%;
+    margin: 10px 0;
+    font-size: 130%;
+    margin: 4.2%;
+
+}
+
+.grupocontato textarea:focus, .grupocontato input:focus {
+    background-color: #9CEAEF;
+    outline: none;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    background-color: transparent;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+}
+
+@media (orientation: portrait) {
+    .meio {
+        padding-top: 30%;
+
+    }
+
+    .sobregrupo {
+        flex-direction: column;
+        margin: 0 40%;
+        padding-top: 15%;
+        padding-bottom: 30%;
+
+    }
+
+    .sobregrupo #telefone {
+        width: 200%;
+
+    }
+
+    .place img, .heart img {
+        width: 100%;
+        padding-left: 40%;
+
+    }
+
+    .titulo h3 {
+        padding-top: 13%;
+
+    }
+
+    #goto {
+        position: fixed;
+        right: -20%;
+
+    }
+
+    #goto img {
+        width: 6%;
+
+    }
+
+    .grupocontato {
+        margin: 0 -25%
+
+    }
+
+    .imgcontato {
+        padding-left: 20%;
+    }
+
+    footer {
+        background-color: white;
+    }
+
+}
+
